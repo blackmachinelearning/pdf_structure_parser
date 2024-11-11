@@ -48,5 +48,5 @@ class PDFParserUniversal:
 if __name__ == "__main__":
     doc = pymupdf.open(os.path.join(Config.DATA_PATH, Config.FILE_NAME))
     pp = PDFParserUniversal(doc=doc)
-    extracted_file_name = f'structureIuniversal_{datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")}.json'
+    extracted_file_name = f'structure_universal_{datetime.datetime.now().strftime("%Y_%m_%d_%H_%M")}.json'
     pp.save_structure(os.path.join(Config.EXTRACTED_DATA_PATH, extracted_file_name))

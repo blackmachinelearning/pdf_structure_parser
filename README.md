@@ -29,7 +29,8 @@ TEST_PDF_PARSER/
 ├── .env                     # Environment variables file
 ├── .gitignore               # Git ignore file
 ├── config.py                # Configuration file for environment variables
-└── requirements.txt         # Project dependencies```
+└── requirements.txt         # Project dependencies
+```
 
 
 ## Installation
@@ -38,18 +39,21 @@ Clone the repository:
 ```bash
 Copy code
 git clone https://github.com/blackmachinelearning/pdf_structure_parser.git
-cd pdf_structure_parser```
+cd pdf_structure_parser
+```
 Set up a virtual environment (recommended):
 
 ```bash
 Copy code
 python -m venv pymupdf-venv
-source pymupdf-venv/bin/activate  # On Windows, use pymupdf-venv\Scripts\activate```
+source pymupdf-venv/bin/activate  # On Windows, use pymupdf-venv\Scripts\activate
+```
 Install dependencies:
 
 ```bash
 Copy code
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 Configure environment variables:
 
 Create a .env file in the project root directory (if needed for environment-specific configurations).
@@ -63,7 +67,8 @@ You can use either pdf_parser.py or pdf_parser_universal.py from the parsers/ di
 Example for running pdf_parser.py:
 ```bash
 Copy code
-python parsers/pdf_parser.py```
+python parsers/pdf_parser.py
+```
 Check the Output:
 
 The structured JSON output will be saved in the extracted_data/ directory (or any specified output location).

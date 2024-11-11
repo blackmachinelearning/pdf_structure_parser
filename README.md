@@ -19,13 +19,11 @@ PDF Structure Parser is a Python project designed to extract the structure (e.g.
 ```plaintext
 TEST_PDF_PARSER/
 ├── data/                    # Folder for input PDF files
-│   └── file.pdf             # Sample PDF file
 ├── extracted_data/          # Folder for extracted JSON output
 ├── parsers/                 # Folder containing parser scripts
 │   ├── __init__.py
 │   ├── pdf_parser.py        # PDF parser script
 │   └── pdf_parser_universal.py  # Alternative parser script
-├── pymupdf-venv/            # (Optional) Virtual environment folder
 ├── .env                     # Environment variables file
 ├── .gitignore               # Git ignore file
 ├── config.py                # Configuration file for environment variables
@@ -63,13 +61,19 @@ Place your PDF files in the data/ directory.
 
 Run the Parser:
 
-You can use either pdf_parser.py or pdf_parser_universal.py from the parsers/ directory.
+You can use either pdf_parser.py or pdf_parser_universal.py from the parsers/ directory. The difference is: pdf_parser_universal will work with pretty much every file, which has any kind of structure, that we use in pymupdf library using get_toc() method. The pdf_parser works better to match the structure, which were given as a sample.
 Example for running pdf_parser.py:
 ```bash
 Copy code
 python parsers/pdf_parser.py
 ```
+
+```bash
+Copy code
+python parsers/pdf_parser_universal.py
+```
 Check the Output:
 
 The structured JSON output will be saved in the extracted_data/ directory (or any specified output location).
-Example output file: structure.json
+
+

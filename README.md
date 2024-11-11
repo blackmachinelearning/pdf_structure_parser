@@ -29,7 +29,7 @@ TEST_PDF_PARSER/
 ├── .env                     # Environment variables file
 ├── .gitignore               # Git ignore file
 ├── config.py                # Configuration file for environment variables
-└── requirements.txt         # Project dependencies
+└── requirements.txt         # Project dependencies```
 
 
 ## Installation
